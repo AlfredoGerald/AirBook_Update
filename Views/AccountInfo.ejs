@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-8/js/all.min.js"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/CSS/Style3.css" />
+
+    <title>Account Information</title>
+  </head>
+  <body>
+    <nav
+    class="navbar fixed-top navbar-expand-lg navbar-light"
+    style="background-color: #f5f5f5"
+  >
+    <div class="container-fluid">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="/home/Homepage"
+              ><i class="fas fa-home"></i> <span> Home </span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"
+              >Categories</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="/home/UploadBook"
+              >Upload</a
+            >
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">
+            Search
+          </button>
+          <a href="/home/AccountInfo">
+            <button type="button" class="btn btn-light ms-2">
+              <i class="fas fa-user"></i>
+            </button>
+          </a>
+          <button type="button" class="btn btn-light ms-2">
+            <i class="fas fa-download"></i>
+          </button>
+          <a href="/home/MyFavorites">
+            <button type="button" class="btn btn-light ms-2">
+              <i class="fas fa-heart"></i></button
+          ></a>
+          <a href="">
+            <button type="button" class="btn btn-light ms-2">
+              <i class="fas fa-sign-out-alt"></i></button
+          ></a>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row mt-6">
+    <div class="col-3">
+    <div class="card" style="width: 300px; height: 500px;">
+      <div class="card-body">
+        <h5 class="card-title pt-3 px-md-3">ACCOUNT DASHBOARD</h5>
+        <div class="d-grid gap-2">
+          <div
+            class="nav flex-column nav-pills me-3 mt-3"
+            id="v-pills-tab"
+            role="tablist"
+            aria-orientation="vertical"
+          >
+            <button
+              class="nav-link"
+              id="v-pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-home"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-home"
+              aria-selected="true"
+            >
+            <i class="fas fa-user"></i>
+            <span> Account Information </span>
+            </button>
+            
+            <a href="/home/MyFavorites">
+            <button
+              class="nav-link ms-5"
+              id="v-pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-profile"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-profile"
+              aria-selected="false"
+            >
+            <i class="fas fa-heart"></i>
+            <span
+                      >My Favorites
+                    </span>
+            </button>
+          </a>
+            <button
+              class="nav-link pt-6"
+              id="v-pills-messages-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-messages"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-messages"
+              aria-selected="false"
+            >
+            <a href="login.html">
+            <i class="fas fa-sign-out-alt"></i>
+            <span> Sign Out </span>
+            </a>
+            </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-3">
+        <h2 class="mt-4">User Information</h2>
+    <div class="card mt-5 ms-4" style="width: 1000px; height: 600px;">
+        <div class="card-body">
+            <form>
+                <div class="col-5 mb-3 m-lg-4">
+                    <label for="exampleInputFirstName1" class="form-label"
+                      >First Name</label
+                    >
+                    <input type="FirstName" class="form-control" />
+                  </div>
+                  <div class="col-5 mb-3 m-lg-4">
+                    <label for="exampleInputLastName1" class="form-label"
+                      >Last Name</label
+                    >
+                    <input type="LastName" class="form-control" />
+                  </div>
+                <div class="col-5 mb-3 m-lg-4">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Email address</label
+                  >
+                  <input type="email" class="form-control" />
+                </div>
+
+                <div class="col-5 mb-3 m-lg-4">
+                <label for="exampleInputGender1" class="form-label"
+                    >Gender</label>
+                <select class="form-select">
+                <option selected disabled value=""></option>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+                </select>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item m-lg-2"><a href="#">Change Password</a></li>
+                  </ol>
+                  <a href="Account Info.html"><button type="submit" class="btn btn-blue w-100">Save Changes</button></a>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+
+    <div class="footer justify-content-center mt-6 d-flex align-items-center">
+        <img src="/assets/Logo.png" alt="" width="200" />
+      </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

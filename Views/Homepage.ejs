@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-8/js/all.min.js"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/CSS/Style.css" />
+    <title>Homepage</title>
+  </head>
+
+  <body>
+    <nav
+      class="navbar fixed-top navbar-expand-lg navbar-light"
+      style="background-color: #f5f5f5"
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/home/Homepage"
+                ><i class="fas fa-home"></i> <span> Home </span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Categories</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/home/UploadBook"
+                >Upload</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+            <a href="/home/AccountInfo">
+              <button type="button" class="btn btn-light ms-2">
+                <i class="fas fa-user"></i>
+              </button>
+            </a>
+            <button type="button" class="btn btn-light ms-2">
+              <i class="fas fa-download"></i>
+            </button>
+            <a href="/home/MyFavorites">
+              <button type="button" class="btn btn-light ms-2">
+                <i class="fas fa-heart"></i></button
+            ></a>
+            <a href="">
+              <button type="button" class="btn btn-light ms-2">
+                <i class="fas fa-sign-out-alt"></i></button
+            ></a>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <img src="/assets/Background.jpg" class="img-fluid mb-5" />
+
+      <h3><span>Most Liked Book</span></h3>
+
+      <div class="row justify-content m-lg-6 mt-5 mb-5">
+        <div class="col-sm-3">
+          <div class="card shadow" style="width: 18rem">
+            <div class="card-preview">
+              <p>
+                <a href="/home/MyFavorites">
+                  <button type="button" class="btn btn-light ms-2">
+                    <i class="fas fa-heart"></i></button
+                ></a>
+              </p>
+              <p>
+                <a href="/home/BookPreview"
+                  ><button type="submit" class="btn btn-light">
+                    Book Preview
+                  </button></a
+                >
+              </p>
+            </div>
+            <img
+              src="/assets/CoverPercy/Percy 1.jpg"
+              class="card-img-fluid-top"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Percy Jackson and The Olympians: The Lightning Theif
+              </h5>
+              <p class="card-text scroll">
+                Percy Jackson adalah seorang pemuda berusia dua belas tahun,
+                penderita disleksia, dan hampir dikeluarkan dari sekolah
+                asramanya.Suatu hari dia diberitahu bahwa dia adalah putra dewa
+                Poseidon. Sejak itu dia harus menghadapi petualangan yang tak
+                pernah ia bayangkan sebelumnya.
+              </p>
+            </div>
+            <div class="d-flex justify-content-around">
+              <p class="card-text text-start">
+                <small class="text-muted">151 Liked</small>
+              </p>
+              <p class="card-text text-end">
+                <small class="text-muted">Comment</small>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card shadow" style="width: 18rem">
+            <img
+              src="/assets/CoverPercy/Percy 2.jpg"
+              class="card-img-fluid-top"
+            />
+            <div class="card-preview">
+              <p>
+                <a href="/home/MyFavorites">
+                  <button type="button" class="btn btn-light ms-2">
+                    <i class="fas fa-heart"></i></button
+                ></a>
+              </p>
+              <p>
+                <a href="/home/BookPreview"
+                  ><button type="submit" class="btn btn-light">
+                    Book Preview
+                  </button></a
+                >
+              </p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                Percy Jackson and The Olympians: The Sea of Monster
+              </h5>
+              <p class="card-text scroll">
+                Setelah menghabiskan musim panas mencari petir milik Dewa Zeus,
+                Percy Jackson ternyata belum bisa menikmati ketenangan. Kali ini
+                dia kewalahan menghadapi teman barunya, Tyson, anak tunawisma
+                berbadan besar dengan tingkah seperti anak kecil yang selalu
+                mengikuti Percy ke mana pun dia pergi.
+              </p>
+            </div>
+            <div class="d-flex justify-content-around">
+              <p class="card-text text-start">
+                <small class="text-muted">121 Liked</small>
+              </p>
+              <p class="card-text text-end">
+                <small class="text-muted">Comment</small>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card shadow" style="width: 18rem">
+            <img
+              src="/assets/CoverPercy/Percy 3.jpg"
+              class="card-img-fluid-top"
+            />
+            <div class="card-preview">
+              <p>
+                <a href="/home/MyFavorites">
+                  <button type="button" class="btn btn-light ms-2">
+                    <i class="fas fa-heart"></i></button
+                ></a>
+              </p>
+              <p>
+                <a href="/home/BookPreview"
+                  ><button type="submit" class="btn btn-light">
+                    Book Preview
+                  </button></a
+                >
+              </p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                Percy Jackson and The Olympians: The Titan's Curse
+              </h5>
+              <p class="card-text scroll">
+                Sesosok monster purba yang telah punah selama ribuan tahun kini
+                bangkit. Monster itu disebut sebagai pembawa kiamat bagi
+                dewa-dewi Olympus. Dewi Artemis, satu-satunya dewi yang tahu
+                cara melacaknya, telah menghilang tanpa jejak. Kini, Percy dan
+                teman-temannya, bersama dengan para Pemburu Artemis, hanya
+                memiliki waktu satu minggu untuk mencari dewi yang diculik dan
+                memecahkan misteri monster yang tengah diburu.
+              </p>
+            </div>
+            <div class="d-flex justify-content-around">
+              <p class="card-text text-start">
+                <small class="text-muted">104 Liked</small>
+              </p>
+              <p class="card-text text-end">
+                <small class="text-muted">Comment</small>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card shadow" style="width: 18rem">
+            <img
+              src="/assets/CoverPercy/Percy 4.jpg"
+              class="card-img-fluid-top"
+            />
+            <div class="card-preview">
+              <p>
+                <a href="/home/MyFavorites">
+                  <button type="button" class="btn btn-light ms-2">
+                    <i class="fas fa-heart"></i></button
+                ></a>
+              </p>
+              <p>
+                <a href="/home/BookPreview"
+                  ><button type="submit" class="btn btn-light">
+                    Book Preview
+                  </button></a
+                >
+              </p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                Percy Jackson and The Olympians: The Battle of The Labyrinth
+              </h5>
+              <p class="card-text scroll">
+                Kronos dan pasukan pengikutnya berusaha mencari jalan untuk
+                menembus sihir perkemahan dan meluluhlantakkan perkemahan
+                setengah dewa. Percy pun arus menjalani misi baru, kali ini
+                Annabeth yang memimpin.
+              </p>
+            </div>
+            <div class="d-flex justify-content-around">
+              <p class="card-text text-start">
+                <small class="text-muted">95 Liked</small>
+              </p>
+              <p class="card-text text-end">
+                <small class="text-muted">Comment</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3><span>Most Downloaded Book</span></h3>
+
+      <div class="row justify-content m-lg-6 mt-5">
+        <div class="col-sm-3">
+          <div class="card shadow" style="width: 18rem">
+            <img
+              src="/assets/CoverPercy/Percy 1.jpg"
+              class="card-img card-img-fluid-top"
+            />
+            <div class="card-preview">
+              <p>
+                <a href="/home/MyFavorites">
+                  <button type="button" class="btn btn-light ms-2">
+                    <i class="fas fa-heart"></i></button
+                ></a>
+              </p>
+              <p>
+                <a href="/home/BookPreview"
+                  ><button type="submit" class="btn btn-light">
+                    Book Preview
+                  </button></a
+                >
+              </p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                Percy Jackson and The Olympians: The Lightning Theif
+              </h5>
+              <p class="card-text scroll">
+                Percy Jackson adalah seorang pemuda berusia dua belas tahun,
+                penderita disleksia, dan hampir dikeluarkan dari sekolah
+                asramanya.Suatu hari dia diberitahu bahwa dia adalah putra dewa
+                Poseidon. Sejak itu dia harus menghadapi petualangan yang tak
+                pernah ia bayangkan sebelumnya.
+              </p>
+            </div>
+            <div class="d-flex justify-content-around">
+              <p class="card-text text-start">
+                <small class="text-muted">151 Liked</small>
+              </p>
+              <p class="card-text text-end">
+                <small class="text-muted">Comment</small>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card shadow" style="width: 18rem">
+            <img
+              src="/assets/CoverPercy/Percy 2.jpg"
+              class="card-img-fluid-top"
+            />
+            <div class="card-preview">
+              <p>
+                <a href="/home/MyFavorites">
+                  <button type="button" class="btn btn-light ms-2">
+                    <i class="fas fa-heart"></i></button
+                ></a>
+              </p>
+              <p>
+                <a href="/home/BookPreview"
+                  ><button type="submit" class="btn btn-light">
+                    Book Preview
+                  </button></a
+                >
+              </p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                Percy Jackson and The Olympians: The Sea of Monster
+              </h5>
+              <p class="card-text scroll">
+                Setelah menghabiskan musim panas mencari petir milik Dewa Zeus,
+                Percy Jackson ternyata belum bisa menikmati ketenangan. Kali ini
+                dia kewalahan menghadapi teman barunya, Tyson, anak tunawisma
+                berbadan besar dengan tingkah seperti anak kecil yang selalu
+                mengikuti Percy ke mana pun dia pergi.
+              </p>
+            </div>
+            <div class="d-flex justify-content-around">
+              <p class="card-text text-start">
+                <small class="text-muted">121 Liked</small>
+              </p>
+              <p class="card-text text-end">
+                <small class="text-muted">Comment</small>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card shadow" style="width: 18rem">
+            <img
+              src="/assets/CoverPercy/Percy 3.jpg"
+              class="card-img-fluid-top"
+            />
+            <div class="card-preview">
+              <p>
+                <a href="/home/MyFavorites">
+                  <button type="button" class="btn btn-light ms-2">
+                    <i class="fas fa-heart"></i></button
+                ></a>
+              </p>
+              <p>
+                <a href="/home/BookPreview"
+                  ><button type="submit" class="btn btn-light">
+                    Book Preview
+                  </button></a
+                >
+              </p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                Percy Jackson and The Olympians: The Titan's Curse
+              </h5>
+              <p class="card-text scroll">
+                Sesosok monster purba yang telah punah selama ribuan tahun kini
+                bangkit. Monster itu disebut sebagai pembawa kiamat bagi
+                dewa-dewi Olympus. Dewi Artemis, satu-satunya dewi yang tahu
+                cara melacaknya, telah menghilang tanpa jejak. Kini, Percy dan
+                teman-temannya, bersama dengan para Pemburu Artemis, hanya
+                memiliki waktu satu minggu untuk mencari dewi yang diculik dan
+                memecahkan misteri monster yang tengah diburu.
+              </p>
+            </div>
+            <div class="d-flex justify-content-around">
+              <p class="card-text text-start">
+                <small class="text-muted">104 Liked</small>
+              </p>
+              <p class="card-text text-end">
+                <small class="text-muted">Comment</small>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card shadow" style="width: 18rem">
+            <img
+              src="/assets/CoverPercy/Percy 4.jpg"
+              class="card-img-fluid-top"
+            />
+            <div class="card-preview">
+              <p>
+                <a href="/home/MyFavorites">
+                  <button type="button" class="btn btn-light ms-2">
+                    <i class="fas fa-heart"></i></button
+                ></a>
+              </p>
+              <p>
+                <a href="/home/BookPreview.html"
+                  ><button type="submit" class="btn btn-light">
+                    Book Preview
+                  </button></a
+                >
+              </p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                Percy Jackson and The Olympians: The Battle of The Labyrinth
+              </h5>
+              <p class="card-text scroll">
+                Kronos dan pasukan pengikutnya berusaha mencari jalan untuk
+                menembus sihir perkemahan dan meluluhlantakkan perkemahan
+                setengah dewa. Percy pun arus menjalani misi baru, kali ini
+                Annabeth yang memimpin.
+              </p>
+            </div>
+            <div class="d-flex justify-content-around">
+              <p class="card-text text-start">
+                <small class="text-muted">95 Liked</small>
+              </p>
+              <p class="card-text text-end">
+                <small class="text-muted">Comment</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer justify-content-center mt-6 d-flex align-items-center">
+      <img src="/assets/Logo.png" alt="" width="200" />
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
