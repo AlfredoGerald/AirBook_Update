@@ -82,7 +82,7 @@
               <button type="button" class="btn btn-light ms-2">
                 <i class="fas fa-heart"></i></button
             ></a>
-            <a href="">
+            <a href="/home/logout">
               <button type="button" class="btn btn-light ms-2">
                 <i class="fas fa-sign-out-alt"></i></button
             ></a>
@@ -109,9 +109,7 @@
           </div>
           <div class="col-7">
             <div class="card-body mt-5 ms-6">
-              <h4 class="card-title">
-                Percy Jackson and The Olympians: The Lightning Theif
-              </h4>
+              <h4 class="card-title"><%= book.Title %></h4>
               <p class="card-text">
                 <small class="text-muted">Fantasy, Action, Advanture</small>
               </p>
@@ -125,18 +123,13 @@
                 </p>
               </div>
 
-              <p class="card-text">
-                Percy Jackson adalah seorang pemuda berusia dua belas tahun,
-                penderita disleksia, dan hampir dikeluarkan dari sekolah
-                asramanya.Suatu hari dia diberitahu bahwa dia adalah putra dewa
-                Poseidon. Sejak itu dia harus menghadapi petualangan yang tak
-                pernah ia bayangkan sebelumnya.
-              </p>
-              <a href="#"
-                ><button type="submit" class="btn btn-blue w-100 mt-5">
+              <p class="card-text"><%= book.Description %></p>
+
+              <a href="#">
+                <button type="submit" class="btn btn-blue w-100 mt-5">
                   Download Now
-                </button></a
-              >
+                </button>
+              </a>
             </div>
           </div>
         </div>

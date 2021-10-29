@@ -82,7 +82,7 @@
               <button type="button" class="btn btn-light ms-2">
                 <i class="fas fa-heart"></i></button
             ></a>
-            <a href="">
+            <a href="/home/logout">
               <button type="button" class="btn btn-light ms-2">
                 <i class="fas fa-sign-out-alt"></i></button
             ></a>
@@ -92,65 +92,100 @@
     </nav>
 
     <div class="container">
-      <div class="card mt-6" style="width: 1200px; height: 650px">
+      <div class="card ms-7 mt-6" style="width: 1100px; height: 700px">
         <h1 class="mt-5 ms-5">Upload Your Own Book</h1>
-        <div class="row mt-5">
-          <div class="col-5">
-            <form>
-              <div class="mb-3 ms-5">
+
+          <form action="/upload/uploadbook" method="POST"  enctype="multipart/form-data">
+            <div class="row mt-5">      
+              <div class="col-5 mb-3 ms-5">
                 <label for="exampleInputEmail1" class="form-label">Title</label>
-                <input type="Title" class="form-control" />
+                <input
+                  type="text"
+                  name="Title"
+                  id="Title"
+                  class="form-control"
+                />
               </div>
-              <div class="mb-3 ms-5">
+
+              <div class="col-5 mb-3 ms-5">
                 <label for="exampleInputPassword1" class="form-label"
-                  >Password</label
+                  >Author</label
                 >
-                <input type="Author" class="form-control" />
+                <input
+                  type="text"
+                  name="Author"
+                  id="Author"
+                  class="form-control"
+                />
+              </div>
 
-                <div class="mb-3 mt-3">
-                    <label for="exampleInputType1" class="form-label"
-                        >Type</label>
-                    <select class="form-select">
-                    <option selected disabled value=""></option>
-                    <option value="1">Novel</option>
-                    <option value="2">Comic</option>
-                    <option value="3">Text Book</option>
-                    <option value="4">Modul</option>
-                    </select>
-                    </div>
-                
-                <div class="mb-3">
-                    <label for="exampleInputGenre1" class="form-label"
-                        >Genre</label>
-                    <select class="form-select">
-                    <option selected disabled value=""></option>
-                    <option value="1">Horor</option>
-                    <option value="2">Advanture</option>
-                    <option value="3">Action</option>
-                    <option value="4">Romance</option>
-                    <option value="5">Fantasy</option>
-                    <option value="6">Sci-Fi</option>
-                    </select>
-                    </div>
+              <div class="col-5 mb-3 ms-5">
+                <label for="exampleInputType1" class="form-label">Type</label>
+                <select name="Type" id="Type" class="form-select">
+                  <option selected disabled value=""></option>
+                  <option value="1">Novel</option>
+                  <option value="2">Comic</option>
+                  <option value="3">Text Book</option>
+                  <option value="4">Modul</option>
+                </select>
+              </div>
 
-              <a href="Homepage.html"
-                ><button type="button" class="btn btn-blue w-100 mt-5">
-                  Submit
-                </button></a
-              >
-            </form>
-          </div>
-
-          <div class="col-11">
-            <div class="mb-3">
-               <label for="formFile" class="form-label">Upload Cover</label>
-               <input class="form-control" type="file" id="formFile">
+              <div class="col-5 ms-5 mb-3">
+                <label for="exampleInputGenre1" class="form-label"
+                  >Genre</label
+                >
+                <select name="Genre" id="Genre" class="form-select">
+                  <option selected disabled value=""></option>
+                  <option value="1">Horor</option>
+                  <option value="2">Advanture</option>
+                  <option value="3">Action</option>
+                  <option value="4">Romance</option>
+                  <option value="5">Fantasy</option>
+                  <option value="6">Sci-Fi</option>
+                </select>
             </div>
+            
+            <div class="col-10 mb-3 ms-5">
+              <label for="exampleInputPassword1" class="form-label"
+                >Description</label
+              >
+              <textarea
+                type="text"
+                name="Description"
+                id="Description"
+                class="form-control"
+              >
+              </textarea>
+              </div>
+            
+              <div class="col-5 ms-5 mb-3">
+                <label for="formFile" class="form-label">Upload Cover</label>
+                <input class="form-control" type="file" id="formFile" name="files" />
+              </div>
+              
+
+              <div class="col-5 ms-5 mb-3">
+                  <label for="formFile" class="form-label" enctype="multipart/form-data">Upload file</label>
+                  <input class="form-control" type="file" id="formFile" name="files" />
+                  </div>
+            </div>
+
+            <div class="col-12 col d-md-flex justify-content-md-center mt-5">
+            <a href="/home/Homepage"
+              ><button type="submit" class="btn btn-blue w-100 mt-2">
+                Submit
+              </button></a
+            >
           </div>
+          </form>
         </div>
+
+
+        </div>
+          </div>
         </div>
       </div>
-
+    </div>
 
     <div class="footer justify-content-center mt-6 d-flex align-items-center">
       <img src="/assets/Logo.png" alt="" width="200" />

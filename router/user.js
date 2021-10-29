@@ -1,11 +1,15 @@
 const express = require('express')
 const user = require('./../Module/user')
+const Book = require('./../Module/book')
 const router = express.Router()
 
 router.use("/assets", express.static('./assets'));
 
-router.get('/Homepage',(req, res)=> {
-    res.render('Homepage')
+router.get('/Homepage', async(req, res)=> {
+    const book = await Book.find().sort({name: 'desc'})
+    res.render('Homepage',{
+        book : book
+    })
 })
 
 router.get('/MyFavorites',(req, res)=> {
@@ -16,8 +20,11 @@ router.get('/AccountInfo',(req, res)=> {
     res.render('AccountInfo')
 })
 
-router.get('/BookPreview',(req, res)=> {
-    res.render('BookPreview')
+router.get('/BookPreview/:id', async(req, res)=> {
+    const book = await Book.findById(req.params.id)
+    res.render('BookPreview',{
+        book : book
+    })
 })
 
 router.get('/UploadBook',(req, res)=> {
@@ -25,6 +32,11 @@ router.get('/UploadBook',(req, res)=> {
 })
 
 router.get('/login',(req, res)=> {
+    res.render('login')
+})
+
+router.get('/logout',(req, res)=> {
+    req.session.destroy()
     res.render('login')
 })
 

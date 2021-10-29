@@ -28,6 +28,10 @@ body {
   height: 200px;
 }
 
+.hide {
+  display: none;
+}
+
 html::-webkit-scrollbar {
   width: 10px;
 }

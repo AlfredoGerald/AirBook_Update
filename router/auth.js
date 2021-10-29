@@ -3,7 +3,7 @@ const User = require('./../Module/user')
 const router = express.Router()
 
 router.post('/createaccount', (req, res) => {
-    const body = {
+   const body = {
         FirstName: req.body.FirstName,
         LastName: req.body.LastName,
         Password: req.body.password,

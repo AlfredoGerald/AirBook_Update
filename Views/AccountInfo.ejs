@@ -20,157 +20,158 @@
   </head>
   <body>
     <nav
-    class="navbar fixed-top navbar-expand-lg navbar-light"
-    style="background-color: #f5f5f5"
-  >
-    <div class="container-fluid">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a
-              class="nav-link active"
-              aria-current="page"
-              href="/home/Homepage"
-              ><i class="fas fa-home"></i> <span> Home </span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#"
-              >Categories</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link active"
-              aria-current="page"
-              href="/home/UploadBook"
-              >Upload</a
-            >
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success" type="submit">
-            Search
-          </button>
-          <a href="/home/AccountInfo">
-            <button type="button" class="btn btn-light ms-2">
-              <i class="fas fa-user"></i>
+      class="navbar fixed-top navbar-expand-lg navbar-light"
+      style="background-color: #f5f5f5"
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/home/Homepage"
+                ><i class="fas fa-home"></i> <span> Home </span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Categories</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/home/UploadBook"
+                >Upload</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
             </button>
-          </a>
-          <button type="button" class="btn btn-light ms-2">
-            <i class="fas fa-download"></i>
-          </button>
-          <a href="/home/MyFavorites">
-            <button type="button" class="btn btn-light ms-2">
-              <i class="fas fa-heart"></i></button
-          ></a>
-          <a href="">
-            <button type="button" class="btn btn-light ms-2">
-              <i class="fas fa-sign-out-alt"></i></button
-          ></a>
-        </form>
-      </div>
-    </div>
-  </nav>
-  <div class="container">
-    <div class="row mt-6">
-    <div class="col-3">
-    <div class="card" style="width: 300px; height: 500px;">
-      <div class="card-body">
-        <h5 class="card-title pt-3 px-md-3">ACCOUNT DASHBOARD</h5>
-        <div class="d-grid gap-2">
-          <div
-            class="nav flex-column nav-pills me-3 mt-3"
-            id="v-pills-tab"
-            role="tablist"
-            aria-orientation="vertical"
-          >
-            <button
-              class="nav-link"
-              id="v-pills-home-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#v-pills-home"
-              type="button"
-              role="tab"
-              aria-controls="v-pills-home"
-              aria-selected="true"
-            >
-            <i class="fas fa-user"></i>
-            <span> Account Information </span>
-            </button>
-            
-            <a href="/home/MyFavorites">
-            <button
-              class="nav-link ms-5"
-              id="v-pills-profile-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#v-pills-profile"
-              type="button"
-              role="tab"
-              aria-controls="v-pills-profile"
-              aria-selected="false"
-            >
-            <i class="fas fa-heart"></i>
-            <span
-                      >My Favorites
-                    </span>
-            </button>
-          </a>
-            <button
-              class="nav-link pt-6"
-              id="v-pills-messages-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#v-pills-messages"
-              type="button"
-              role="tab"
-              aria-controls="v-pills-messages"
-              aria-selected="false"
-            >
-            <a href="login.html">
-            <i class="fas fa-sign-out-alt"></i>
-            <span> Sign Out </span>
+            <a href="/home/AccountInfo">
+              <button type="button" class="btn btn-light ms-2">
+                <i class="fas fa-user"></i>
+              </button>
             </a>
+            <button type="button" class="btn btn-light ms-2">
+              <i class="fas fa-download"></i>
             </button>
+            <a href="/home/MyFavorites">
+              <button type="button" class="btn btn-light ms-2">
+                <i class="fas fa-heart"></i></button
+            ></a>
+            <a href="/home/logout">
+              <button type="button" class="btn btn-light ms-2">
+                <i class="fas fa-sign-out-alt"></i></button
+            ></a>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row mt-6">
+        <div class="col-3">
+          <div class="card" style="width: 300px; height: 500px">
+            <div class="card-body">
+              <h5 class="card-title pt-3 px-md-3">ACCOUNT DASHBOARD</h5>
+              <div class="d-grid gap-2">
+                <div
+                  class="nav flex-column nav-pills me-3 mt-3"
+                  id="v-pills-tab"
+                  role="tablist"
+                  aria-orientation="vertical"
+                >
+                  <button
+                    class="nav-link"
+                    id="v-pills-home-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-home"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-home"
+                    aria-selected="true"
+                  >
+                    <i class="fas fa-user"></i>
+                    <span> Account Information </span>
+                  </button>
+
+                  <a href="/home/MyFavorites">
+                    <button
+                      class="nav-link ms-5"
+                      id="v-pills-profile-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-profile"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-profile"
+                      aria-selected="false"
+                    >
+                      <i class="fas fa-heart"></i>
+                      <span>My Favorites </span>
+                    </button>
+                  </a>
+                  <button
+                    class="nav-link pt-6"
+                    id="v-pills-messages-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-messages"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-messages"
+                    aria-selected="false"
+                  >
+                    <a href="/home/logout">
+                      <i class="fas fa-sign-out-alt"></i>
+                      <span> Sign Out </span>
+                    </a>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="col-3">
-        <h2 class="mt-4">User Information</h2>
-    <div class="card mt-5 ms-4" style="width: 1000px; height: 600px;">
-        <div class="card-body">
-            <form>
+        <div class="col-3">
+          <h2 class="ms-3 mt-4">User Information</h2>
+          <div class="card mt-5 ms-4" style="width: 1000px; height: 500px">
+            <div class="card-body">
+              <form>
                 <div class="col-5 mb-3 m-lg-4">
-                    <label for="exampleInputFirstName1" class="form-label"
-                      >First Name</label
-                    >
-                    <input type="FirstName" class="form-control" />
-                  </div>
-                  <div class="col-5 mb-3 m-lg-4">
-                    <label for="exampleInputLastName1" class="form-label"
-                      >Last Name</label
-                    >
-                    <input type="LastName" class="form-control" />
-                  </div>
+                  <label for="exampleInputFirstName1" class="form-label"
+                    >First Name</label
+                  >
+                  <input type="FirstName" class="form-control" />
+                </div>
+
+                <div class="col-5 mb-3 m-lg-4">
+                  <label for="exampleInputLastName1" class="form-label"
+                    >Last Name</label
+                  >
+                  <input type="LastName" class="form-control" />
+                </div>
+
                 <div class="col-5 mb-3 m-lg-4">
                   <label for="exampleInputEmail1" class="form-label"
                     >Email address</label
@@ -179,31 +180,30 @@
                 </div>
 
                 <div class="col-5 mb-3 m-lg-4">
-                <label for="exampleInputGender1" class="form-label"
-                    >Gender</label>
-                <select class="form-select">
-                <option selected disabled value=""></option>
-                <option value="1">Male</option>
-                <option value="2">Female</option>
-                </select>
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item m-lg-2"><a href="#">Change Password</a></li>
-                  </ol>
-                  <a href="Account Info.html"><button type="submit" class="btn btn-blue w-100">Save Changes</button></a>
-
+                  <label for="exampleInputGender1" class="form-label"
+                    >Gender</label
+                  >
+                  <select class="form-select">
+                    <option selected disabled value=""></option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                  </select>
+                </div>
               </form>
+
+              <a href="/home/AccountInfo"
+                ><button type="submit" class="btn btn-blue ms-6 w-25">
+                  Save Changes
+                </button></a
+              >
             </div>
           </div>
         </div>
       </div>
     </div>
-</div>
-</div>
-
-
     <div class="footer justify-content-center mt-6 d-flex align-items-center">
-        <img src="/assets/Logo.png" alt="" width="200" />
-      </div>
+      <img src="/assets/Logo.png" alt="" width="200" />
+    </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
